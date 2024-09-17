@@ -13,14 +13,15 @@ let package = Package(
             targets: ["DrinkMenuUseCase"]),
     ],
     dependencies: [
-        .package(path: "DrinkMenuUseCaseAPI")
+        .package(path: "DrinkMenuUseCaseAPI"),
+        .package(name: "DatabaseSwiftData", path: "../Data/DatabaseSwiftData")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "DrinkMenuUseCase",
-            dependencies: ["DrinkMenuUseCaseAPI"]),
+            dependencies: ["DrinkMenuUseCaseAPI", "DatabaseSwiftData"]),
         .testTarget(
             name: "DrinkMenuUseCaseTests",
             dependencies: ["DrinkMenuUseCase"]),

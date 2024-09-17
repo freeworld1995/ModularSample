@@ -4,25 +4,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "DrinkMenu",
+    name: "DatabaseSwiftData",
     platforms: [.iOS(.v17)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "DrinkMenu",
-            targets: ["DrinkMenu"]),
+            name: "DatabaseSwiftData",
+            targets: ["DatabaseSwiftData"]),
     ],
-    dependencies: [
-        .package(path: "DrinkMenuUseCaseAPI")
-    ],
+    dependencies: [.package(name: "Entities", path: "../Domain/Entities")],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "DrinkMenu",
-            dependencies: ["DrinkMenuUseCaseAPI"]),
+            name: "DatabaseSwiftData", dependencies: ["Entities"]),
         .testTarget(
-            name: "DrinkMenuTests",
-            dependencies: ["DrinkMenu"]),
+            name: "DatabaseSwiftDataTests",
+            dependencies: ["DatabaseSwiftData"]),
     ]
 )

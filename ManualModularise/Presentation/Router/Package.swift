@@ -4,22 +4,28 @@
 import PackageDescription
 
 let package = Package(
-    name: "DatabaseSwiftData",
+    name: "Router",
     platforms: [.iOS(.v17)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "DatabaseSwiftData",
-            targets: ["DatabaseSwiftData"]),
+            name: "Router",
+            targets: ["Router"]),
+        .library(
+            name: "RouterAPI",
+            targets: ["RouterAPI"]),
     ],
-    dependencies: [.package(name: "Entities", path: "../Domain/Entities")],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "DatabaseSwiftData", dependencies: ["Entities"]),
+            name: "Router", dependencies: [
+                "RouterAPI"
+            ]),
+        .target(
+            name: "RouterAPI"),
         .testTarget(
-            name: "DatabaseSwiftDataTests",
-            dependencies: ["DatabaseSwiftData"]),
+            name: "RouterTests",
+            dependencies: ["Router"]),
     ]
 )

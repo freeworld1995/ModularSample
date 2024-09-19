@@ -1,8 +1,8 @@
-import DrinkMenuUseCaseAPI
+import DrinkMenuRepositoryAPI
 import Entities
 import StorageAPI
 
-public final class DrinkMenuUseCase<Storage: StorageAPI>: DrinkMenuUseCaseAPI {
+public final class DrinkMenuRepository<Storage: StorageAPI>: DrinkMenuRepositoryAPI {
     private var storage: Storage
     
     public init(storage: Storage) {

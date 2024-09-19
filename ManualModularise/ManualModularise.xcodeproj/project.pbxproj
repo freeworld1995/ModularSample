@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B74F9D72C8D602F001149C1 /* DrinkMenuUseCase in Frameworks */ = {isa = PBXBuildFile; productRef = 1B74F9D62C8D602F001149C1 /* DrinkMenuUseCase */; };
+		1B47DDFE2C9A81FC0058C65E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47DDFD2C9A81FC0058C65E /* HomeView.swift */; };
+		1B47DE012C9A9E290058C65E /* StorageAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 1B47DE002C9A9E290058C65E /* StorageAPI */; };
+		1B47DE032C9A9E290058C65E /* SwiftDataStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 1B47DE022C9A9E290058C65E /* SwiftDataStorage */; };
+		1B47DE052C9A9E290058C65E /* UserDefaultStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 1B47DE042C9A9E290058C65E /* UserDefaultStorage */; };
+		1B47DE092C9AFA310058C65E /* Router in Frameworks */ = {isa = PBXBuildFile; productRef = 1B47DE082C9AFA310058C65E /* Router */; };
+		1B47DE0B2C9AFA310058C65E /* RouterAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 1B47DE0A2C9AFA310058C65E /* RouterAPI */; };
+		1B47DE0E2C9B260D0058C65E /* DrinkMenuRepository in Frameworks */ = {isa = PBXBuildFile; productRef = 1B47DE0D2C9B260D0058C65E /* DrinkMenuRepository */; };
+		1B47DE102C9B260D0058C65E /* DrinkMenuRepositoryAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 1B47DE0F2C9B260D0058C65E /* DrinkMenuRepositoryAPI */; };
+		1B47DE122C9B260E0058C65E /* DrinkMenuUseCase in Frameworks */ = {isa = PBXBuildFile; productRef = 1B47DE112C9B260E0058C65E /* DrinkMenuUseCase */; };
+		1B47DE142C9B260E0058C65E /* DrinkMenuUseCaseAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 1B47DE132C9B260E0058C65E /* DrinkMenuUseCaseAPI */; };
+		1B47DE162C9B302E0058C65E /* CompositionRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47DE152C9B302E0058C65E /* CompositionRoot.swift */; };
+		1B47DE182C9B304A0058C65E /* CompositionRoot+DrinkMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47DE172C9B304A0058C65E /* CompositionRoot+DrinkMenu.swift */; };
+		1B47DE1A2C9B30BA0058C65E /* CompositionRoot+DrinkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47DE192C9B30BA0058C65E /* CompositionRoot+DrinkDetail.swift */; };
 		1B74F9D92C8D602F001149C1 /* Entities in Frameworks */ = {isa = PBXBuildFile; productRef = 1B74F9D82C8D602F001149C1 /* Entities */; };
 		1B74F9DB2C8D6051001149C1 /* DrinkDetail in Frameworks */ = {isa = PBXBuildFile; productRef = 1B74F9DA2C8D6051001149C1 /* DrinkDetail */; };
 		1B74F9DD2C8D6051001149C1 /* DrinkMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 1B74F9DC2C8D6051001149C1 /* DrinkMenu */; };
-		1B74F9DF2C8D6051001149C1 /* DrinkMenuUseCaseAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 1B74F9DE2C8D6051001149C1 /* DrinkMenuUseCaseAPI */; };
 		1B7ECDE12C8584C100CF31D4 /* ManualModulariseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7ECDE02C8584C100CF31D4 /* ManualModulariseApp.swift */; };
 		1B7ECDE32C8584C100CF31D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7ECDE22C8584C100CF31D4 /* ContentView.swift */; };
 		1B7ECDE52C8584C100CF31D4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7ECDE42C8584C100CF31D4 /* Item.swift */; };
@@ -20,10 +31,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B47DDFB2C9881C10058C65E /* DatabaseSwiftData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DatabaseSwiftData; sourceTree = "<group>"; };
+		1B47DDFD2C9A81FC0058C65E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1B47DDFF2C9A91850058C65E /* Storage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Storage; sourceTree = "<group>"; };
+		1B47DE072C9AF2E30058C65E /* Router */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Router; sourceTree = "<group>"; };
+		1B47DE0C2C9B24460058C65E /* DrinkMenuDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DrinkMenuDomain; sourceTree = "<group>"; };
+		1B47DE152C9B302E0058C65E /* CompositionRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionRoot.swift; sourceTree = "<group>"; };
+		1B47DE172C9B304A0058C65E /* CompositionRoot+DrinkMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CompositionRoot+DrinkMenu.swift"; sourceTree = "<group>"; };
+		1B47DE192C9B30BA0058C65E /* CompositionRoot+DrinkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CompositionRoot+DrinkDetail.swift"; sourceTree = "<group>"; };
 		1B74F9D02C8CBD60001149C1 /* Entities */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Entities; sourceTree = "<group>"; };
-		1B74F9D12C8CBD65001149C1 /* DrinkMenuUseCase */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DrinkMenuUseCase; sourceTree = "<group>"; };
-		1B74F9D22C8CBDA2001149C1 /* DrinkMenuUseCaseAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DrinkMenuUseCaseAPI; sourceTree = "<group>"; };
 		1B7ECDDD2C8584C100CF31D4 /* ManualModularise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManualModularise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B7ECDE02C8584C100CF31D4 /* ManualModulariseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualModulariseApp.swift; sourceTree = "<group>"; };
 		1B7ECDE22C8584C100CF31D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,10 +54,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B74F9D72C8D602F001149C1 /* DrinkMenuUseCase in Frameworks */,
+				1B47DE0B2C9AFA310058C65E /* RouterAPI in Frameworks */,
+				1B47DE102C9B260D0058C65E /* DrinkMenuRepositoryAPI in Frameworks */,
+				1B47DE032C9A9E290058C65E /* SwiftDataStorage in Frameworks */,
+				1B47DE142C9B260E0058C65E /* DrinkMenuUseCaseAPI in Frameworks */,
+				1B47DE0E2C9B260D0058C65E /* DrinkMenuRepository in Frameworks */,
+				1B47DE092C9AFA310058C65E /* Router in Frameworks */,
 				1B74F9DB2C8D6051001149C1 /* DrinkDetail in Frameworks */,
+				1B47DE052C9A9E290058C65E /* UserDefaultStorage in Frameworks */,
 				1B74F9DD2C8D6051001149C1 /* DrinkMenu in Frameworks */,
-				1B74F9DF2C8D6051001149C1 /* DrinkMenuUseCaseAPI in Frameworks */,
+				1B47DE122C9B260E0058C65E /* DrinkMenuUseCase in Frameworks */,
+				1B47DE012C9A9E290058C65E /* StorageAPI in Frameworks */,
 				1B74F9D92C8D602F001149C1 /* Entities in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,12 +72,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B47DE062C9ABFFA0058C65E /* CompositionRoot */ = {
+			isa = PBXGroup;
+			children = (
+				1B47DE152C9B302E0058C65E /* CompositionRoot.swift */,
+				1B47DE172C9B304A0058C65E /* CompositionRoot+DrinkMenu.swift */,
+				1B47DE192C9B30BA0058C65E /* CompositionRoot+DrinkDetail.swift */,
+			);
+			path = CompositionRoot;
+			sourceTree = "<group>";
+		};
 		1B74F9CC2C8CA6BE001149C1 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				1B47DE0C2C9B24460058C65E /* DrinkMenuDomain */,
 				1B74F9D02C8CBD60001149C1 /* Entities */,
-				1B74F9D22C8CBDA2001149C1 /* DrinkMenuUseCaseAPI */,
-				1B74F9D12C8CBD65001149C1 /* DrinkMenuUseCase */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -63,7 +94,7 @@
 		1B74F9CD2C8CA6C5001149C1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				1B47DDFB2C9881C10058C65E /* DatabaseSwiftData */,
+				1B47DDFF2C9A91850058C65E /* Storage */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -71,6 +102,7 @@
 		1B74F9CE2C8CA6CD001149C1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				1B47DE072C9AF2E30058C65E /* Router */,
 				1B7ECDF12C85970700CF31D4 /* DrinkMenu */,
 				1B7ECDF02C85970600CF31D4 /* DrinkDetail */,
 			);
@@ -107,6 +139,8 @@
 		1B7ECDDF2C8584C100CF31D4 /* ManualModularise */ = {
 			isa = PBXGroup;
 			children = (
+				1B47DE062C9ABFFA0058C65E /* CompositionRoot */,
+				1B47DDFD2C9A81FC0058C65E /* HomeView.swift */,
 				1B7ECDE02C8584C100CF31D4 /* ManualModulariseApp.swift */,
 				1B7ECDE22C8584C100CF31D4 /* ContentView.swift */,
 				1B7ECDE42C8584C100CF31D4 /* Item.swift */,
@@ -134,6 +168,7 @@
 				1B7ECDD92C8584C100CF31D4 /* Sources */,
 				1B7ECDDA2C8584C100CF31D4 /* Frameworks */,
 				1B7ECDDB2C8584C100CF31D4 /* Resources */,
+				1B47DDFC2C99B3270058C65E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -141,11 +176,18 @@
 			);
 			name = ManualModularise;
 			packageProductDependencies = (
-				1B74F9D62C8D602F001149C1 /* DrinkMenuUseCase */,
 				1B74F9D82C8D602F001149C1 /* Entities */,
 				1B74F9DA2C8D6051001149C1 /* DrinkDetail */,
 				1B74F9DC2C8D6051001149C1 /* DrinkMenu */,
-				1B74F9DE2C8D6051001149C1 /* DrinkMenuUseCaseAPI */,
+				1B47DE002C9A9E290058C65E /* StorageAPI */,
+				1B47DE022C9A9E290058C65E /* SwiftDataStorage */,
+				1B47DE042C9A9E290058C65E /* UserDefaultStorage */,
+				1B47DE082C9AFA310058C65E /* Router */,
+				1B47DE0A2C9AFA310058C65E /* RouterAPI */,
+				1B47DE0D2C9B260D0058C65E /* DrinkMenuRepository */,
+				1B47DE0F2C9B260D0058C65E /* DrinkMenuRepositoryAPI */,
+				1B47DE112C9B260E0058C65E /* DrinkMenuUseCase */,
+				1B47DE132C9B260E0058C65E /* DrinkMenuUseCaseAPI */,
 			);
 			productName = ManualModularise;
 			productReference = 1B7ECDDD2C8584C100CF31D4 /* ManualModularise.app */;
@@ -157,7 +199,7 @@
 		1B7ECDD52C8584C100CF31D4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
@@ -196,12 +238,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B47DDFC2C99B3270058C65E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1B7ECDD92C8584C100CF31D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B47DE182C9B304A0058C65E /* CompositionRoot+DrinkMenu.swift in Sources */,
 				1B7ECDE32C8584C100CF31D4 /* ContentView.swift in Sources */,
+				1B47DE1A2C9B30BA0058C65E /* CompositionRoot+DrinkDetail.swift in Sources */,
+				1B47DDFE2C9A81FC0058C65E /* HomeView.swift in Sources */,
+				1B47DE162C9B302E0058C65E /* CompositionRoot.swift in Sources */,
 				1B7ECDE52C8584C100CF31D4 /* Item.swift in Sources */,
 				1B7ECDE12C8584C100CF31D4 /* ManualModulariseApp.swift in Sources */,
 			);
@@ -411,9 +477,41 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1B74F9D62C8D602F001149C1 /* DrinkMenuUseCase */ = {
+		1B47DE002C9A9E290058C65E /* StorageAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StorageAPI;
+		};
+		1B47DE022C9A9E290058C65E /* SwiftDataStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftDataStorage;
+		};
+		1B47DE042C9A9E290058C65E /* UserDefaultStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UserDefaultStorage;
+		};
+		1B47DE082C9AFA310058C65E /* Router */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Router;
+		};
+		1B47DE0A2C9AFA310058C65E /* RouterAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RouterAPI;
+		};
+		1B47DE0D2C9B260D0058C65E /* DrinkMenuRepository */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DrinkMenuRepository;
+		};
+		1B47DE0F2C9B260D0058C65E /* DrinkMenuRepositoryAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DrinkMenuRepositoryAPI;
+		};
+		1B47DE112C9B260E0058C65E /* DrinkMenuUseCase */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DrinkMenuUseCase;
+		};
+		1B47DE132C9B260E0058C65E /* DrinkMenuUseCaseAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DrinkMenuUseCaseAPI;
 		};
 		1B74F9D82C8D602F001149C1 /* Entities */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -426,10 +524,6 @@
 		1B74F9DC2C8D6051001149C1 /* DrinkMenu */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DrinkMenu;
-		};
-		1B74F9DE2C8D6051001149C1 /* DrinkMenuUseCaseAPI */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = DrinkMenuUseCaseAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -11,12 +11,22 @@ let package = Package(
         .library(
             name: "DrinkDetail",
             targets: ["DrinkDetail"]),
+        .library(
+            name: "DrinkDetailAPI",
+            targets: ["DrinkDetailAPI"]),
+    ],
+    dependencies: [
+        .package(name: "Entities", path: "../Domain/Entities"),
+        .package(name: "Router", path: "../Presentation/Router"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "DrinkDetail"),
+            name: "DrinkDetail",
+        dependencies: ["Entities", "Router"]),
+        .target(
+            name: "DrinkDetailAPI"),
         .testTarget(
             name: "DrinkDetailTests",
             dependencies: ["DrinkDetail"]),

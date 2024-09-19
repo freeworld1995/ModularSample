@@ -1,32 +1,28 @@
-//
-//  ManualModulariseApp.swift
-//  ManualModularise
-//
-//  Created by groo on 2/9/24.
-//
-
 import SwiftUI
 import SwiftData
 
+import DrinkDetail
+import DrinkMenu
+import DrinkMenuUseCase
+import DrinkMenuRepository
+
+import SwiftDataStorage
+import StorageAPI
+
+import Entities
+
+import Router
+
 @main
 struct ManualModulariseApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-
+    let compositionRoot: CompositionRoot = CompositionRoot(router: Router())
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                compositionRoot.createDrinkMenu()
+            }
         }
-        .modelContainer(sharedModelContainer)
     }
+    
 }
